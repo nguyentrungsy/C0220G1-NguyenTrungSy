@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DuCument</title>
+</head>
+<body>
+<label for="abc">Amount: </label><input type="text" Id="Amount">
+<label>to Current:</label><select Id="to current">
+    <option value="VND">VND</option>
+    <option value="USA">USA</option>
+</select>
+<label>ToCurrent</label><select id="ToCurrent">
+    <option value="VND">VND</option>
+    <OPTION VALUE="USD">USD</OPTION>
+</select>
+<input id="result">
+<button onclick="convert()">convert</button>
+<script>
+    function convert() {
+let result=0;
+let amount = document.getElementById("amount")
+        let fromcurrent = document.getElementById("fromCurent").value;
+let tocurrent= document.getElementById("tocurrent").value;
+Ij(fromcurrent==="VND" && ToCurrent==="USD"){
+    result = amount.value/23000;
+
+        }
+        else if(fromcurrent==="USD" && ToCurrent==="VND"){
+            result = amount.value*23000;
+
+        }else {
+            alert("yêu cầu người dùng lựa chọn loại tiền")
+        }
+        document.getElementById("result").value=result
+        //amount.value=""
+        //amount.style.background="red"
+    }
+</script>
+</body>
+</html>

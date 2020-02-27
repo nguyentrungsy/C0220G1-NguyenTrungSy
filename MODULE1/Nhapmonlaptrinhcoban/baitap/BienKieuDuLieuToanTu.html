@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DiemTrungbinhTongdiem</title>
+</head>
+<body>
+<script>
+    let inputSinhHoc
+    let inputHoaHoc
+    let inputVatLy
+    inputSinhHoc = prompt("enter the SinhHoc");
+    inputHoaHoc = prompt("enter the HoaHoc");
+    inputVatLy = prompt("enter the VatLy");
+    let SinhHoc = parseInt(inputSinhHoc);
+    let VatLy =parseInt(inputVatLy);
+    let HoaHoc = parseInt(inputHoaHoc);
+    let area = (VatLy +HoaHoc +SinhHoc)/3;
+    document.write("điểm trung bình"+ area);
+    let total =VatLy +HoaHoc +SinhHoc;
+    document.write("tổng điểm"+total);
+</script>
+</body>
+</html>
